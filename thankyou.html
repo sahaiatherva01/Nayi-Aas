@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You - Nayi Aas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #dff6ff, #f0fff4);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .thankyou-container {
+      background: #ffffff;
+      padding: 50px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 0.9s ease forwards;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #0a4275;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 35px;
+      line-height: 1.6;
+    }
+
+    .button {
+      background: linear-gradient(90deg, #0a4985, #56a4e9);
+      color: #fff;
+      padding: 14px 34px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .button:hover {
+      background: linear-gradient(90deg, #065a9f, #2db3fc);
+      transform: translateY(-2px);
+    }
+
+    .footer-text {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #777;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .thankyou-container {
+        padding: 30px 20px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-container">
+    <h1>Thank You for Reaching Out!</h1>
+    <p>Your message has been received. Your support empowers us to keep spreading hope, light, and opportunities through <strong>Nayi Aas</strong>. Let's build a better tomorrow, together.</p>
+    <a href="index.html" class="button">← Back to Home</a>
+    <div class="footer-text">© 2025 Nayi Aas | Igniting Change, Together.</div>
+  </div>
+</body>
+</html>
