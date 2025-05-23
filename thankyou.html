@@ -14,24 +14,24 @@
 
     body {
       font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(135deg, #dff6ff, #f0fff4);
+      background-color: #f5f9ff;
       color: #333;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      padding: 20px;
+      min-height: 100vh;
+      padding: 30px 15px;
     }
 
-    .thankyou-container {
+    .thank-you-box {
       background: #ffffff;
       padding: 50px 40px;
       border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       max-width: 600px;
       width: 100%;
       text-align: center;
-      animation: fadeIn 0.9s ease forwards;
+      animation: fadeIn 0.8s ease-out forwards;
     }
 
     h1 {
@@ -42,31 +42,33 @@
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #444;
-      margin-bottom: 35px;
       line-height: 1.6;
+      margin-bottom: 30px;
     }
 
-    .button {
-      background: linear-gradient(90deg, #0a4985, #56a4e9);
-      color: #fff;
-      padding: 14px 34px;
-      border-radius: 50px;
-      text-decoration: none;
+    .btn-back {
+      display: inline-block;
+      background-color: rgba(165, 255, 47, 0.85);
+      color: #0a4275;
       font-weight: 600;
+      padding: 12px 30px;
       font-size: 1rem;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
       transition: all 0.3s ease-in-out;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     }
 
-    .button:hover {
-      background: linear-gradient(90deg, #065a9f, #2db3fc);
-      transform: translateY(-2px);
+    .btn-back:hover {
+      background-color: rgba(165, 255, 47, 0.85);
+      color: #ffffff;
+      transform: translateY(-3px);
     }
 
-    .footer-text {
-      margin-top: 30px;
+    .footer-note {
+      margin-top: 25px;
       font-size: 0.9rem;
       color: #777;
       font-style: italic;
@@ -75,7 +77,7 @@
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(30px);
       }
       to {
         opacity: 1;
@@ -83,25 +85,27 @@
       }
     }
 
-    @media (max-width: 500px) {
-      .thankyou-container {
+    @media (max-width: 576px) {
+      .thank-you-box {
         padding: 30px 20px;
       }
+
       h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
+
       p {
-        font-size: 1.05rem;
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="thankyou-container">
-    <h1>Thank You for Reaching Out!</h1>
-    <p>Your message has been received. Your support empowers us to keep spreading hope, light, and opportunities through <strong>Nayi Aas</strong>. Let's build a better tomorrow, together.</p>
-    <a href="index.html" class="button">← Back to Home</a>
-    <div class="footer-text">© 2025 Nayi Aas | Igniting Change, Together.</div>
+  <div class="thank-you-box">
+    <h1>Thank You for Joining Us!</h1>
+    <p>We truly appreciate your willingness to be a part of <strong>Nayi Aas</strong>. Together, we're building a stronger, brighter future. Stay tuned for upcoming initiatives and updates.</p>
+    <a href="index.html" class="btn-back">← Back to Home</a>
+    <div class="footer-note">© 2025 Nayi Aas | Igniting Change, Together.</div>
   </div>
 </body>
 </html>
